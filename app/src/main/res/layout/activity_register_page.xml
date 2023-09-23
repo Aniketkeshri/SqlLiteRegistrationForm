@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/img_1"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPage">
+
+
+    <Button
+
+        android:id="@+id/delete"
+        android:layout_width="135dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/purple_700"
+        android:gravity="center"
+        android:drawableLeft="@drawable/baseline_delete_forever_24"
+        android:text="Delete"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card0"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="304dp"
+        android:layout_height="49dp"
+        android:layout_margin="16dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="50dp"
+        android:drawablePadding="10dp"
+        android:elevation="10dp"
+        android:textColorHint="@color/red"
+        android:hint="Register"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card1"
+        android:layout_width="310dp"
+        android:layout_height="66dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="16dp"
+        app:cardBackgroundColor="#3DDC84"
+        app:cardCornerRadius="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text1" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="30"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/baseline_supervised_user_circle_24"
+        android:elevation="10dp"
+        android:hint="User Name"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/card1"
+        app:layout_constraintTop_toTopOf="@+id/card1" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card3"
+        android:layout_width="301dp"
+        android:layout_height="69dp"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="#3DDC84"
+        app:cardCornerRadius="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card2" />
+
+    <EditText
+        android:id="@+id/userMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:drawablePadding="10dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="236dp"
+        android:elevation="10dp"
+        android:hint="User Phone"
+        android:inputType="number"
+        android:drawableLeft="@drawable/baseline_contact_phone_24"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/card2"
+        app:layout_constraintTop_toTopOf="@+id/card3" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card4"
+        android:layout_width="305dp"
+        android:layout_height="67dp"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="#3DDC84"
+        app:cardCornerRadius="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card3" />
+
+    <EditText
+        android:id="@+id/userEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="236dp"
+        android:elevation="10dp"
+        android:hint="User Email"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/card1"
+        app:layout_constraintTop_toTopOf="@+id/card2" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card2"
+        android:layout_width="305dp"
+        android:layout_height="61dp"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="#3DDC84"
+        app:cardCornerRadius="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card1" />
+
+    <EditText
+        android:id="@+id/userpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="236dp"
+        android:drawableLeft="@drawable/baseline_visibility_off_24"
+        android:drawablePadding="10dp"
+        android:elevation="10dp"
+        android:hint="User Password"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/card3"
+        app:layout_constraintTop_toTopOf="@+id/card4" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card5"
+        android:layout_width="307dp"
+        android:layout_height="65dp"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="#3DDC84"
+        app:cardCornerRadius="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card4" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/userDob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="236dp"
+        android:drawableLeft="@drawable/baseline_calendar_month_24"
+        android:drawablePadding="10dp"
+        android:elevation="10dp"
+        android:hint="User Dob"
+        android:paddingLeft="20dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:focusable="false"
+        app:layout_constraintStart_toStartOf="@+id/card4"
+        app:layout_constraintTop_toTopOf="@+id/card5" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card6"
+        android:layout_width="310dp"
+        android:layout_height="65dp"
+        android:layout_margin="20dp"
+        app:cardBackgroundColor="#3DDC84"
+        app:cardCornerRadius="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card5" />
+    <RadioButton
+        android:id="@+id/userMale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="236dp"
+        android:drawableLeft="@drawable/baseline_male_24"
+        android:elevation="10dp"
+        android:hint="Male"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:focusable="false"
+        app:layout_constraintStart_toStartOf="@+id/card5"
+        app:layout_constraintTop_toTopOf="@+id/card6" />
+    <RadioButton
+        android:id="@+id/userFeMale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="236dp"
+        android:drawableLeft="@drawable/baseline_female_24"
+
+        android:elevation="10dp"
+        android:textStyle="bold"
+        android:hint="Female"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:focusable="false"
+        app:layout_constraintLeft_toRightOf="@id/userMale"
+        app:layout_constraintTop_toTopOf="@+id/card6" />
+
+
+    <Button
+
+        android:id="@+id/button"
+        android:layout_width="135dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/purple_200"
+        android:drawableLeft="@drawable/baseline_subject_24"
+        android:gravity="center"
+        android:text="Submit"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
